@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+/* Control the exact positioning of all image elements */
+img {
+  position: absolute;
+}
+
+/* Set left & right divs to be 500 px each */
+div {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+#right-side {
+  left: 500px;
+  border-left: 1px solid;
+}
+
+#game-board {
+  width: 1000px;
+  height: 500px;
+}
