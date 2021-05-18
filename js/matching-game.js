@@ -1,8 +1,10 @@
 'use strict'
 
 // Global Variables
-let numberOfFaces = 5;
 const theLeftSide = document.querySelector('#left-side');
+const theRightSide = document.querySelector('#right-side');
+
+let numberOfFaces = 5;
 
 // Event Listeners
 window.addEventListener("load", generateFaces);
@@ -20,5 +22,9 @@ function generateFaces() {
 
         theLeftSide.appendChild(face);
     }
+
+    const leftSideImages = theLeftSide.cloneNode(true);
+    leftSideImages.removeChild(leftSideImages.lastChild);
+    theRightSide.appendChild(leftSideImages);
 }
 
